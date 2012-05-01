@@ -1,8 +1,8 @@
 function hitBall()
    -- convert angle to radians
    shotAngle = math.pi / 180 * shotAngle
-   speed = maxSpeed
-
+   speed = swingForce
+   swingForce = 0
    xVel = math.cos(shotAngle) * speed
    yVel = math.sin(shotAngle) * speed
 end

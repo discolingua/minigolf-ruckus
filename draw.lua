@@ -14,6 +14,7 @@ end
 function drawHUD()
    lg.print(shotAngle, 20, 20)
    lg.print(speed, 20, 30)
+   lg.print(swingForce,20,40)
 
    if speed == 0 then
       drawReticule()
